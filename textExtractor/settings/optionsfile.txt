@@ -10,6 +10,7 @@
 word2vecmodel	/home/nparslow/Documents/AutoCorrige/SpellChecker/word2vec_models/orig/gensim_output/fullwiki_withcats.word2vec
 bigrammodel	/home/nparslow/Documents/AutoCorrige/SpellChecker/sxpipeTokenisedWiki/ngram_wiki_count.txt
 lexiqueDict	/home/nparslow/Documents/AutoCorrige/tools/Lexique380/Bases+Scripts/Lexique380.txt
+freq2ranks	/home/nparslow/Documents/fouille_de_textes/projet/lund/frmg_normfreq_ranks.json
 #******************************************************
 # corpus options
 #******************************************************

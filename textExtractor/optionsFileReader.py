@@ -24,6 +24,7 @@ def readOptionsFile( optionsfilename ):
         "lexiqueDict":None,
         "word2vecmodel":None,
         "bigrammodel":None,
+        "freq2ranks":None,
         "outdir":None,
         "origtextdir":None,
         "melteddir":None,

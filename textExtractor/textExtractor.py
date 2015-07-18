@@ -244,6 +244,7 @@ def main():
     corpusName = globalparams["corpusName"][0]
     headerInfo = globalparams["headerInfo"][0]
     lexiquefile = globalparams["lexiqueDict"][0]
+    freq2ranksfile = globalparams["freq2ranks"][0]
 
     gensimModelFile = globalparams["word2vecmodel"][0]
 
@@ -252,7 +253,7 @@ def main():
     lemmacat2freqrank = {}
     if "PLex" in variableTypes or "S" in variableTypes or "altS" in variableTypes or "LFP" in variableTypes:
         print "loading freq info"
-        lemmacat2freqrank = calcPLex.loadLemmaCat2freqrank()
+        lemmacat2freqrank = calcPLex.loadLemmaCat2freqrank(freq2ranksfile)
 
     word2vecModel = None
     if "w2vct" in variableTypes:

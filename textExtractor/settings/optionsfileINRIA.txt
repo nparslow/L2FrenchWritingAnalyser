@@ -9,7 +9,8 @@
 #******************************************************
 word2vecmodel	/home/pinot/alpage/nparslow/Documents/analyserScripts/required/fullwiki_withcats.word2vec
 bigrammodel	/home/pinot/alpage/nparslow/Documents/Corpora/ngrams/ngram_wiki_count.txt
-lexiqueDict	/home/pinot/alpage/nparslow/Documents/analyserScripts/required/Bases+Scripts/Lexique380.txt
+lexiqueDict	/home/pinot/alpage/nparslow/Documents/analyserScripts/required/Lexique380.txt
+lexiqueDict	/home/pinot/alpage/nparslow/Documents/analyserScripts/required/frmg_normfreq_ranks.json
 #******************************************************
 # corpus options
 #******************************************************
