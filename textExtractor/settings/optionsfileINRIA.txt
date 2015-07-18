@@ -1,0 +1,85 @@
+##############################################################
+# options file for languageProperyExtractor
+##############################################################
+#******************************************************
+# comments with #
+# option tab value (can have mutliple tabs between)
+# if option requires a list use tabs between values
+# do not include 'filename' or 'level' as these will be added automatically
+#******************************************************
+word2vecmodel	/home/pinot/alpage/nparslow/Documents/analyserScripts/required/fullwiki_withcats.word2vec
+bigrammodel	/home/pinot/alpage/nparslow/Documents/Corpora/ngrams/ngram_wiki_count.txt
+lexiqueDict	/home/pinot/alpage/nparslow/Documents/analyserScripts/required/Bases+Scripts/Lexique380.txt
+#******************************************************
+# corpus options
+#******************************************************
+outdir	/home/pinot/alpage/nparslow/Documents/analyserScripts/outArff
+origtextdir	/home/pinot/alpage/nparslow/Documents/Corpora/CEFLE/
+melteddir	/home/pinot/alpage/nparslow/Documents/Corpora/melted_CORPUS_CEFLE
+ddageddir	/home/pinot/alpage/nparslow/Documents/Corpora/ddaged_CORPUS_CEFLE
+frmgeddir	/home/pinot/alpage/nparslow/Documents/Corpora/analysed_CORPUS_CEFLE
+#******************************************************
+# arff file options:
+#******************************************************
+corpusName	CEFLE_INRIA
+headerInfo	the full CELFE corpus
+#******************************************************
+# variable names (and any options in their calculation)
+#******************************************************
+paragraphs
+sentences
+words		count
+sentsPerPara	mean
+sentsPerPara	sd
+wordsPerSent	mean
+wordsPerSent	sd
+lettersPerWord	mean
+lettersPerWord	sd
+syllablesPerWord	mean
+syllablesPerWord	sd
+PLex		500
+S
+altS	a
+altS	b
+vocd
+mtld	0.72
+hdd	42
+LFP	1	1000
+LFP	1001	2000
+LFP	2001	3000
+LFP	3001	4000
+LFP	4001	8000
+LFP	8001
+LFP	unknown
+spellcorr
+meltdiff
+meanmelt
+parsed	full
+parsed	corrected
+parsed	robust
+weightPerWord
+verb	single
+verb	aux
+verb	compound
+verb	indicative
+verb	conditional
+verb	subjunctive
+verb	imperfect
+verb	future
+verb	present
+verb	notense
+clause	rel
+clause	nom
+clause	acc
+clause	loc
+w2vct	Word	Word
+w2vct	Word	Sent
+w2vct	Sent	Sent
+w2vct	Sent	Text
+treeTypesPerSent	mean
+treeTypesPerSent	sd
+TreeTypesHDD
+TreeTypesYuleK
+noVerbSentences
+toksBeforeMainVerb	mean
+
