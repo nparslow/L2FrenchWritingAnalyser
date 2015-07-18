@@ -8,6 +8,7 @@ import nGramModel
 import optionsFileReader
 import Text
 from queryLexique380 import loadLexiqueToDict
+import sys, getopt
 
 __author__ = 'nparslow'
 
@@ -221,10 +222,21 @@ def variableAndParamsToString(variable, params):
     # as we need the extra "_"
     return variable
 
-def main():
+def main(argv):
     # todo add a debug variable and optionfilename variable
-
     optionsfilename = "settings/optionsfile.txt"
+    try:
+        opts, args = getopt.getopt(argv,"hi:", ["in_options_file="])
+    except getopt.GetoptError:
+        print 'textExtractor.py -i <input options file>'
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'textExtractor.py -i <input options file>'
+            sys.exit()
+        elif opt in ("-i", "--in_options_file"):
+            optionsfilename = arg 
+
     globalparams, variableparams = optionsFileReader.readOptionsFile(optionsfilename)
     filenames = allCorpusFiles( globalparams["origtextdir"] )
     print filenames
@@ -364,4 +376,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:]) # from 1 on as the first option is the script name
