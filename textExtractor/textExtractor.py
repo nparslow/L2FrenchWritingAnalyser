@@ -296,6 +296,7 @@ def main(argv):
     #filenames = ["/home/nparslow/Documents/AutoCorrige/Corpora/CORPUS_CEFLE/B/Bror2.txt"]
     filenames = ["/home/nparslow/Documents/AutoCorrige/Corpora/CORPUS_CEFLE/C/Caroline.txt"]
     filenames = ["/home/nparslow/Documents/AutoCorrige/Corpora/CORPUS_CEFLE/E/Eddy.txt"] # just to test an E
+    filenames = ["/home/pinot/alpage/nparslow/Documents/Corpora/CEFLE/E/Eddy.txt"] # just to test an E
 
 
     resources = {
